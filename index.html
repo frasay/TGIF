@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank God It's Frinance</title>
+<meta content="Real-time stock charts, watchlists, screeners, and fundamentals. Zero API keys. Pure TradingView widgets. Far out!" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/style_d336fd77.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+                window.load_data_from_csv = (filename) => {
+                    // Implementation needed when code is downloaded
+                };
+
+                window.save_data_to_csv = (filename, data) => {
+                    // Implementation needed when code is downloaded
+                };
+
+                window.call_llm = (system_prompt, user_messages, json_fields) => {
+                    // Implementation needed when code is downloaded
+                };
+            </script></head>
+<body>
+<div class="stripe-overlay"></div>
+<header class="header">
+<div class="header-inner">
+<div class="header-top">
+<div class="logo-block">
+<h1 class="logo">Thank God It's <span class="logo-highlight">Frinance</span></h1>
+<p class="tagline">~ Groovy Real-Time Market Vibes ~</p>
+</div>
+<div class="clock-block">
+<span class="clock-dot"></span>
+<span class="clock-text" id="clock">--:--:--</span>
+</div>
+</div>
+<nav class="nav" id="mainNav">
+<button class="nav-btn active" data-section="watchlist" onclick="showSection('watchlist')">
+                    ✦ Watchlist
+                </button>
+<button class="nav-btn" data-section="chart" onclick="showSection('chart')">
+                    ✦ Chart
+                </button>
+<button class="nav-btn" data-section="screener" onclick="showSection('screener')">
+                    ✦ Screener
+                </button>
+<button class="nav-btn" data-section="fundamentals" onclick="showSection('fundamentals')">
+                    ✦ Fundamentals
+                </button>
+</nav>
+</div>
+</header>
+<main class="main">
+<div class="main-inner">
+<!-- WATCHLIST -->
+<section class="section-panel visible fade-in" id="section-watchlist">
+<div class="section-header">
+<h2 class="section-title">✦ Price Dashboard</h2>
+</div>
+<div class="widget-container" style="height: 460px;">
+<div id="watchlist-widget" style="width:100%;height:100%;"></div>
+</div>
+<div class="widget-container" style="height: 80px; margin-top: 1rem;">
+<div id="ticker-tape-widget" style="width:100%;height:100%;"></div>
+</div>
+</section>
+<!-- CHART -->
+<section class="section-panel" id="section-chart">
+<div class="section-header">
+<h2 class="section-title">✦ Advanced Chart</h2>
+<div class="search-bar">
+<input class="search-input" id="chartSymbolInput" placeholder="Enter ticker..." type="text" value="NASDAQ:MU"/>
+<button class="search-btn" onclick="loadChart()">Dig It</button>
+</div>
+</div>
+<div class="widget-container" style="height: 600px;">
+<div id="chart-widget" style="width:100%;height:100%;"></div>
+</div>
+</section>
+<!-- SCREENER -->
+<section class="section-panel" id="section-screener">
+<div class="section-header">
+<h2 class="section-title">✦ Stock Screener</h2>
+</div>
+<div class="widget-container" style="height: 600px;">
+<div id="screener-widget" style="width:100%;height:100%;"></div>
+</div>
+</section>
+<!-- FUNDAMENTALS -->
+<section class="section-panel" id="section-fundamentals">
+<div class="section-header">
+<h2 class="section-title">✦ Fundamentals</h2>
+<div class="search-bar">
+<input class="search-input" id="fundSymbolInput" placeholder="Enter ticker..." type="text" value="NASDAQ:MU"/>
+<button class="search-btn" onclick="loadFundamentals()">Dig It</button>
+</div>
+</div>
+<div class="fund-grid">
+<div class="widget-container" style="height: 380px;">
+<div id="fund-profile-widget" style="width:100%;height:100%;"></div>
+</div>
+<div class="widget-container" style="height: 380px;">
+<div id="fund-financials-widget" style="width:100%;height:100%;"></div>
+</div>
+</div>
+<div class="widget-container" style="height: 500px; margin-top: 1rem;">
+<div id="fund-chart-widget" style="width:100%;height:100%;"></div>
+</div>
+</section>
+</div>
+</main>
+<footer class="footer">
+<p class="footer-text">✦ Thank God It's Frinance © 2025 ✦ Powered by TradingView ✦ No API Keys, Baby ✦</p>
+<p class="footer-sub">Market data for informational purposes only. Stay groovy.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
